@@ -1,0 +1,56 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Diego",
+        "email": "lmsilva.diego@gmail.com",
+        "team_id": 1,
+        "team": "APF"
+      },
+      {
+        "id": 2,
+        "name": "Wagner",
+        "email": "wagner@gmal.com",
+        "team_id": 1,
+        "team": "APF"
+      },
+      {
+        "id": 3,
+        "name": "Pablo",
+        "email": "pablo@gmail.com",
+        "team_id": 1,
+        "team": "APF"
+      },
+      {
+        "id": 4,
+        "name": "Leo",
+        "email": "leo@gmail.com",
+        "team_id": null,
+        "team": null
+      },
+      {
+        "id": 5,
+        "name": "Afonso",
+        "email": "Afonso@gmal.com",
+        "team_id": 2,
+        "team": "Europa"
+      },
+      {
+        "id": 6,
+        "name": "Lusival",
+        "email": "Lusival@gmail.com",
+        "team_id": 2,
+        "team": "Europa"
+      }
+    ],
+    "teams": [
+      {
+        "id": 1,
+        "name": "APF"
+      },
+      {
+        "id": 2,
+        "name": "EUROPA"
+      }
+    ]
+  }

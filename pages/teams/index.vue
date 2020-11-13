@@ -1,15 +1,14 @@
 <template>
-<div>
+ <div>
   <div style="margin-bottom: 16px">
       <a-button type="primary">
         Novo
       </a-button>
     </div>
- <a-table :columns="columns" :data-source="users">
+ <a-table :columns="columns" :data-source="teams">
     <a slot="name" slot-scope="text">{{ text }}</a>
   </a-table>
 </div>
- 
 </template>
 <script>
 
@@ -20,37 +19,26 @@ const columns = [
   {
     title: 'Nome',
     dataIndex: 'name',
-    ellipsis: true,
   },
-  {
-    title: 'Email',
-    dataIndex: 'email',
-    ellipsis: true,
-  },
-  {
-    title: 'Equipe',
-    dataIndex: 'team',
-    ellipsis: true,
-  }
 ];
 
 export default {
   data() {
     return {
-      allUsers : [],
+      allTeams : [],
       columns,
     };
   },
 
   computed: {
       ...mapGetters([
-          'users'
+          'teams'
       ])
   },
 
   async fetch({store}){
-        let {data} = await axios.get('http://localhost:3000/users')
-        store.dispatch('setUsers', data);
+        let {data} = await axios.get('http://localhost:3000/teams')
+        store.dispatch('setTeams', data);
   }
 };
 </script>

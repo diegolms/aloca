@@ -10,8 +10,13 @@
         </a-menu-item>
         <a-menu-item key="2">
           <a-icon type="user" />
-          <span> Usuários </span>  
+          <span> Usuário </span>  
           <nuxt-link to="/users"> </nuxt-link>
+        </a-menu-item>
+        <a-menu-item key="3">
+          <a-icon type="team" />
+          <span> Equipe </span>  
+          <nuxt-link to="/teams"> </nuxt-link>
         </a-menu-item>
       </a-menu>
     </a-layout-sider>
